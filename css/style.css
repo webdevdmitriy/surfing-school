@@ -49,6 +49,13 @@ body {
   padding: 0 10px;
 }
 
+.header {
+  background-image: url('../images/bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  min-height: 100vh;
+}
+
 .header__top {
   padding: 50px 0 90px;
   display: flex;
@@ -82,10 +89,12 @@ body {
 .title-img {
   margin-bottom: 12px;
   width: 100%;
+  position: relative;
+  z-index: -1;
 }
 .title-text {
   color: #fff;
-  font-size: 20ox;
+  font-size: 20px;
   border-radius: 30px;
   background-color: #2b2a29;
   padding: 10px 20px;
@@ -95,6 +104,12 @@ body {
 .header__content {
   display: flex;
   justify-content: space-between;
+}
+.header__info {
+  display: flex;
+  flex-direction: column;
+  gap: 118px;
+  margin-top: auto;
 }
 
 .header__info-list {
@@ -117,6 +132,9 @@ body {
   border: 1px solid #0a507a;
   font-size: 26px;
   font-weight: 700;
+}
+
+.header__social {
 }
 
 .header__social-list {
